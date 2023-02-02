@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/ffcb238210.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <!-- topbar -->
+    <section
+      class="w-full bg-no-repeat bg-cover"
+      style="height: 50vh; background-image: url(images/duet-banner.jpg)"
+    >
+      <div>
+        <nav class="top-0 left-0 w-full shadow border-b-[1.5px]">
+          <div
+            class="container m-auto flex justify-between items-center text-gray-700"
+          >
+            <ul
+              class="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer"
+            >
+              <li class="hover:text-[#009f51] py-4 px-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  class="h-4 w-4 inline-flex"
+                >
+                  <path
+                    d="M184.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L39 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L39 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM256 96c0-17.7 14.3-32 32-32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32zM192 416c0-17.7 14.3-32 32-32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32zM80 464c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48z"
+                  /></svg
+                >Home
+              </li>
+              <li class="hover:text-[#009f51] py-4 px-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="h-4 w-4 inline-flex"
+                >
+                  <path
+                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM325.8 139.7l14.4 14.4c15.6 15.6 15.6 40.9 0 56.6l-21.4 21.4-71-71 21.4-21.4c15.6-15.6 40.9-15.6 56.6 0zM119.9 289L225.1 183.8l71 71L190.9 359.9c-4.1 4.1-9.2 7-14.9 8.4l-60.1 15c-5.5 1.4-11.2-.2-15.2-4.2s-5.6-9.7-4.2-15.2l15-60.1c1.4-5.6 4.3-10.8 8.4-14.9z"
+                  /></svg
+                >Admission
+              </li>
+              <li class="hover:text-[#009f51] py-4 px-6">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C87.5 32 35.1 48.6 9 59.9c-5.6 2.4-9 8-9 14V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V73.9c0-6.1-3.4-11.6-9-14C540.9 48.6 488.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"
+                  /></svg
+                >Library
+              </li>
+              <li class="hover:text-[#009f51] py-4 px-6">People</li>
+              <li class="hover:text-[#009f51] py-4 px-6">Alumni</li>
+            </ul>
+            <button
+              class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none bg-[#009f51] group"
+            >
+              <div class="w-5 h-1 bg-white mb-1"></div>
+              <div class="w-5 h-1 bg-white mb-1"></div>
+              <div class="w-5 h-1 bg-white mb-1"></div>
+              <div
+                class="absolute top-0 -right-full h-screen w-8/12 bg-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300"
+              >
+                <ul
+                  class="flex flex-col items-center w-full text-base cursor-pointer pt-10"
+                >
+                  <li class="hover:text-[#009f51] px-6 py-4 w-full">
+                    Services
+                  </li>
+                  <li class="hover:text-[#009f51] px-6 py-4 w-full">
+                    Admission
+                  </li>
+                  <li class="hover:text-[#009f51] px-6 py-4 w-full">Library</li>
+                  <li class="hover:text-[#009f51] px-6 py-4 w-full">People</li>
+                  <li class="hover:text-[#009f51] px-6 py-4 w-full">Alumni</li>
+                </ul>
+              </div>
+            </button>
+            <div class="flex flex-row gap-1 pl-8 py-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="none"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-10 h-10 p-2 text-[#fff] hover:bg-[#dd4b39] bg-[#009f51] rounded-full"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-10 h-10 p-2 text-[#fff] hover:bg-[#dd4b39] bg-[#009f51] rounded-full"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
+            </div>
+          </div>
+        </nav>
+        <!-- menu bar -->
+        <nav class="top-0 left-0 w-full">
+          <div
+            class="container m-auto flex justify-between items-center text-gray-700"
+          >
+            <div class="flex flex-row gap-1 pl-8 py-4">
+              <img
+                class="h-[4.5rem] w-[4.5rem]"
+                src="images/duet-logo.png"
+                alt=""
+              />
+            </div>
+            <ul
+              class="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer"
+            >
+              <li
+                class="hover:text-[#009f51] hover:border-t-2 hover:border-[#009f51] py-4 px-6"
+              >
+                Home
+              </li>
+              <li
+                class="hover:text-[#009f51] hover:border-[#009f51] hover:border-t-2 py-4 px-6"
+              >
+                About DUET
+              </li>
+              <li
+                class="hover:text-[#009f51] hover:border-[#009f51] hover:border-t-2 py-4 px-6"
+              >
+                Notices
+              </li>
+              <li
+                class="hover:text-[#009f51] hover:border-[#009f51] hover:border-t-2 py-4 px-6"
+              >
+                Academic
+              </li>
+              <li
+                class="hover:text-[#009f51] hover:border-[#009f51] hover:border-t-2 py-4 px-6"
+              >
+                Office & Administration
+              </li>
+              <li
+                class="hover:text-[#009f51] hover:border-[#009f51] hover:border-t-2 py-4 px-6"
+              >
+                Publication
+              </li>
+              <li
+                class="hover:text-[#009f51] hover:border-[#009f51] hover:border-t-2 py-4 px-6"
+              >
+                Online Service
+              </li>
+            </ul>
+            <button
+              class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none bg-[#009f51] group"
+            >
+              <div class="w-5 h-1 bg-white mb-1"></div>
+              <div class="w-5 h-1 bg-white mb-1"></div>
+              <div class="w-5 h-1 bg-white mb-1"></div>
+              <div
+                class="absolute top-0 -right-full h-screen w-8/12 bg-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300"
+              >
+                <ul
+                  class="flex flex-col items-center w-full text-base cursor-pointer pt-10"
+                >
+                  <li class="hover:text-[#009f51] px-6 py-4 w-full">Home</li>
+                  <li class="hover:text-[#009f51] px-6 py-4 w-full">
+                    About DUET
+                  </li>
+                  <li class="hover:text-[#009f51] px-6 py-4 w-full">Notices</li>
+                  <li class="hover:text-[#009f51] px-6 py-4 w-full">
+                    Academic
+                  </li>
+                  <li class="hover:text-[#009f51] px-6 py-4 w-full">
+                    Office & Administration
+                  </li>
+                  <li class="hover:text-[#009f51] px-6 py-4 w-full">
+                    Publication
+                  </li>
+                  <li class="hover:text-[#009f51] px-6 py-4 w-full">
+                    Online Service
+                  </li>
+                </ul>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="container mx-auto mt-7">
+        <div class="flex justify-center items-center">
+          <h2>Home</h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            class="w-4 h-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+
+          <h2>Pages</h2>
+        </div>
+        <h1 class="text-center text-4xl font-black">
+          Controller of Examinations Office
+        </h1>
+      </div>
+    </section>
+
+    <section class="container mx-auto flex justify-between space-x-8 mt-[35px]">
+      <div class="pt-6 pb-20 shadow-md px-3 w-5/12">
+        <h2 class="text-[25px] text-center">
+          Controller of Examinations Office
+        </h2>
+        <ul class="text-[14px] font-medium px-4">
+          <li
+            class="py-3 border-b-[1px] px-6 hover:text-[#009f51] transition-all duration-75"
+          >
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 inline-flex"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+              Office Home</a
+            >
+          </li>
+          <li
+            class="py-3 border-b-[1px] px-6 hover:text-[#009f51] transition-all duration-75"
+          >
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 inline-flex"
+                ii
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+              Message from Office Head</a
+            >
+          </li>
+          <li
+            class="py-3 border-b-[1px] px-6 hover:text-[#009f51] transition-all duration-75"
+          >
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 inline-flex"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+              Vision and Mission</a
+            >
+          </li>
+          <li
+            class="py-3 border-b-[1px] px-6 hover:text-[#009f51] transition-all duration-75"
+          >
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 inline-flex"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+              Employee Information</a
+            >
+          </li>
+          <li
+            class="py-3 border-b-[1px] px-6 hover:text-[#009f51] transition-all duration-75"
+          >
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 inline-flex"
+                ii
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+              Downloadable Form</a
+            >
+          </li>
+          <li
+            class="py-3 border-b-[1px] px-6 hover:text-[#009f51] transition-all duration-75"
+          >
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 inline-flex"
+                ii
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                /></svg
+              >Resources</a
+            >
+          </li>
+          <li
+            class="py-3 border-b-[1px] px-6 hover:text-[#009f51] transition-all duration-75"
+          >
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 inline-flex"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+              Citizen's Charter</a
+            >
+          </li>
+          <li
+            class="py-3 border-b-[1px] px-6 hover:text-[#009f51] transition-all duration-75"
+          >
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 inline-flex"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+              Honour Board</a
+            >
+          </li>
+          <li
+            class="py-3 border-b-[1px] px-6 hover:text-[#009f51] transition-all duration-75"
+          >
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 inline-flex"
+                i
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+              Ex-Employee Information</a
+            >
+          </li>
+          <li class="py-3 px-6 hover:text-[#009f51] transition-all duration-75">
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 inline-flex"
+                inline
+                i
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+              Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div>
+          <h1 class="text-[2rem] font-black">Welcome to</h1>
+          <h2 class="text-[1.5rem]">Controller of Examinations Office</h2>
+        </div>
+        <div class="flex justify-between space-x-8 mt-12">
+          <div
+            class="shadow-md rounded-md border-t-4 border border-t-[#009f51] px-8 py-6"
+          >
+            <div>
+              <h1 class="text-[1.8rem] italic">
+                Office <span class="font-black">Vision</span>
+              </h1>
+              <i style="color: #009f51" class="fa-solid fa-eye"></i>
+            </div>
+            <p class="text-justify py-6">
+              To be an eminent center for management of examinations and results
+              towards achieving the vision of the university.
+            </p>
+          </div>
+          <div
+            class="shadow-md rounded-md border-t-4 border border-t-[#009f51] px-8 py-6"
+          >
+            <div>
+              <h1 class="text-[1.8rem] italic">
+                Office <span class="font-black">Mision</span>
+              </h1>
+              <img src="" alt="" />
+            </div>
+            <p class="text-justify py-2">
+              To be an eminent center for management of examinations and results
+              towards achieving the vision of the university.
+            </p>
+            <p class="text-justify py-2">
+              To be an eminent center for management of examinations and results
+            </p>
+            <p class="text-justify py-2">
+              To be an eminent center for management of examinations and results
+              towards achieving the vision of the university.
+            </p>
+            <p class="text-justify py-2">
+              To be an eminent center for management of examinations and results
+              towards achieving the vision of the university.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="bg-[#212529]">
+      <div class="container mx-auto">
+        <div class="flex flex-row justify-between items-center">
+          <div class="w-8/12 flex flex-row justify-between items-center">
+            <div class="pt-6 pb-20 px-3 w-5/12">
+              <h2 class="text-[25px] text-white text-center">
+                Controller of Examinations Office
+              </h2>
+              <ul class="text-[14px] font-medium px-4">
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Academic Calendar</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      ii
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Message from Office Head</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Academic Collaboration</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+
+                    Admission for Undergraduate</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      ii
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Admission for Postgraduate</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      ii
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      /></svg
+                    >Dean's List</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Department</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    DUET Journal Access</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      i
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    e-Learning Platform</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      inline
+                      i
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    eRegistration(Undergraduate)</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      inline
+                      i
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Institute</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      inline
+                      i
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Publication</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      inline
+                      i
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Scholarship/Funding</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-6 pb-20 px-3 w-5/12">
+              <h2 class="text-[25px] text-white text-center">Quick Links</h2>
+              <ul class="text-[14px] font-medium px-4">
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    APA & National Integrity Strategy Implementation</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      ii
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Calendar 2023</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Convocation</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    DUET Clubs & Communities</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      ii
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Downloadable Forms</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      ii
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      /></svg
+                    >DUET Alumni Association</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    DUET Directory App</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Latest News</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      i
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Holiday List</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      inline
+                      i
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Online Job Application Submission Portal</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      inline
+                      i
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Phonebook</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      inline
+                      i
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    Services</a
+                  >
+                </li>
+                <li
+                  class="py-3 px-6 text-[#777] hover:text-white transition-all duration-75"
+                >
+                  <a href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 inline-flex"
+                      inline
+                      i
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                    University Act-2003</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-4/12">
+            <div class="google-map-border"></div>
+            <div>
+              <p class="text-[#777] hover:text-white">
+                <span class="text-[#777] hover:text-[#009f51]"
+                  >Mailing Address:</span
+                >
+                Registrar, Dhaka University of Engineering & Technology,
+                Gazipur, Gazipur-1707, Bangladesh
+              </p>
+              <p class="text-[#777] hover:text-white">
+                <span class="text-[#777] hover:text-[#009f51]">Phone:</span
+                >+88-02-49274003
+              </p>
+              <p class="text-[#777] hover:text-white">
+                <span class="text-[#777] hover:text-[#009f51]">PABX:</span
+                >+88-02-49274034-53, Extn: 1101
+              </p>
+              <p class="text-[#777] hover:text-white">
+                <span class="text-[#777] hover:text-[#009f51]">Fax:</span
+                >+88-02-49274001-02
+              </p>
+              <p class="text-[#777] hover:text-white">
+                <span class="text-[#777] hover:text-[#009f51]">Email:</span
+                >reg_duet@duet.ac.bd
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
